@@ -1,0 +1,12 @@
+---
+# handler to handle DB tier notifs
+
+- name: restart mysql
+  service:
+      name: mysql
+      state: restarted
+
+- name: restart iptables
+  service:
+    name: iptables
+    state: restarted
